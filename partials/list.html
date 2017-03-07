@@ -1,37 +1,37 @@
 <section class="artistpage">
   <div class="search">
-    <h1>Artist Directory</h1>
+    <h1>Hello Sushi</h1>
     <label>search: </label>
-    <input ng-model="query" placeholder="Search for artists" autofocus>
+    <input ng-model="query" placeholder="find your favorite sushi" autofocus>
 
-    <label class="formgroup">by:
+    <label class="formgroup">sort by:
       <select ng-model="artistOrder">
-        <option value="name">Name</option>
-        <option value="reknown">Reknown</option>
+        <option value="name">name</option>
+        <option value="reknown">raw fish</option>
       </select>
     </label>
 
-    <label class="formgroup">
+    <label class="formgroup mobile">
       <input type="radio" ng-model="direction" name="direction" checked>
       ascending
      </label>
-    <label class="formgroup">
+    <label class="formgroup mobile">
       <input type="radio" ng-model="direction" name="direction" value="reverse">
       descending
     </label>
-   
+
   </div>
   <ul class="artistlist">
     <li ng-animate="'animate'" class="artist cf" ng-repeat="item in artists | filter: query | orderBy: artistOrder:direction">
       <a href="#/details/{{artists.indexOf(item)}}">
-        <img ng-src="images/{{item.shortname}}_tn.jpg" alt="Photo of {{item.name}}">
+        <img ng-src="images/{{item.shortname}}.jpg" alt="Photo of {{item.name}}">
         <div class="info">
           <h2>{{item.name}}</h2>
           <h3>{{item.reknown}}</h3>
         </div>
       </a>
     </li>
-  </ul>  
+  </ul>
 </section>
 
 
