@@ -1,3 +1,6 @@
-AngularJS Portfolio Project 1
+AngularJS Portfolio Project 2
+====================
 
-View the live demo.
+
+
+View the [live demo](https://nancagithub.github.io/hello-sushi/index.html#/list).
